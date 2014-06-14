@@ -15,7 +15,7 @@
         <script src="src/js/jquery.equalheights.js" type="text/javascript"></script>
         <!--[if lt IE 9]><script type="text/javascript" src="src/js/html5.js"></script><![endif]-->
     </head>
-    <body id="page6">
+    <body id="page7">
         <!--==============================header=================================-->
         <header>
             <div class="row-top">
