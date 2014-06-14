@@ -10,5 +10,5 @@ require(dirname(__FILE__) . "/Q.class.php");
 require(dirname(__FILE__) . "/Validation.class.php");
 require(dirname(__FILE__) . "/Modelo.class.php");
 $_config = new Config();
-$_q = new Q($_config->getDb());
+$q = new Q($_config->getDb());
 ?>

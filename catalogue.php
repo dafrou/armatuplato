@@ -1,3 +1,6 @@
+<?php
+    require('./src/srv/core/start.php');
+?>
 <!DOCTYPE html>
 <html>
     <head>
