@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    require('./src/srv/core/start.php');
+session_start();
+require('./src/srv/core/start.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
         <title>Arma Tu Plato.cl | Contacto</title>
         <meta charset="utf-8">
         <?php
-            require("./src/srv/views/header.php");
+        require("./src/srv/views/header.php");
         ?>
     </head>
     <body id="page6">
@@ -18,7 +18,7 @@
                 <div class="main">
                     <div>
                         <?php
-                            require("./src/srv/views/barra-superior-usuario.php");
+                        require("./src/srv/views/barra-superior-usuario.php");
                         ?>
                     </div>
                     <div class="wrapper">

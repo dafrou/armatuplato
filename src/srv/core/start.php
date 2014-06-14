@@ -9,6 +9,7 @@ require(dirname(__FILE__) . "/config.php");
 require(dirname(__FILE__) . "/Q.class.php");
 require(dirname(__FILE__) . "/Validation.class.php");
 require(dirname(__FILE__) . "/Modelo.class.php");
+$valida = new Validation();
 $_config = new Config();
 $q = new Q($_config->getDb());
 ?>

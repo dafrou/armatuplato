@@ -1,3 +1,8 @@
+<?php
+session_start();
+require ('./src/srv/core/start.php');
+require('./src/srv/proceso/login.php');
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -51,7 +56,14 @@
                     </article>
                     <article class="col-2">
                         <h3 class="p1">Registrate</h3>
-                        <form id="contact-form" action="#" method="post" enctype="multipart/form-data">
+                        <?php
+                        if (isset($errores) && count($errores) > 0) {
+                            foreach ($errores as $error) {
+                                echo "<p>$error</p>";
+                            }
+                        }
+                        ?>
+                        <form id="contact-form" action="" method="post">
                             <fieldset>
                                 <label><span class="text-form">Mail:</span>
                                     <input name="email" type="text" />
@@ -60,9 +72,11 @@
                                     <input name="pass" type="text" />
                                 </label>
                                 <div class="wrapper">
-                                    
-                                        <div class="clear"></div>
-                                        <div class="buttons"> <a class="button-2" href="#">Limpiar</a> <a class="button-2" href="#">Registrarse</a> </div>
+
+                                    <div class="clear"></div>
+                                    <div class="buttons">
+                                        <a class="button-2" href="#">Limpiar</a>
+                                        <button class="button-2">Iniciar sesión</button>
                                     </div>
                                 </div>
                             </fieldset>
