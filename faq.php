@@ -15,6 +15,11 @@
         <header>
             <div class="row-top">
                 <div class="main">
+                    <div>
+                        <?php
+                            require("./src/srv/views/barra-superior-usuario.php");
+                        ?>
+                    </div>
                     <div class="wrapper">
                         <h1><a href="index.php">ArmaTuPlato . cl<span></span></a></h1>
                         <nav>

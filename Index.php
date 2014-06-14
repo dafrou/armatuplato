@@ -18,7 +18,7 @@
                 <div class="main">
                     <div>
                         <?php
-                            require("barra-superior-login.php");
+                            require("./src/srv/views/barra-superior-usuario.php");
                         ?>
                     </div>
                     <div class="wrapper">
