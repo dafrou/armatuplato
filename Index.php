@@ -1,29 +1,28 @@
-﻿<!DOCTYPE html>
+<?php
+    session_start();
+    require('./src/srv/core/start.php');
+?>
+<!DOCTYPE html>
 <html onload="index.html">
     <head>
         <title>Arma Tu Plato.cl | Index</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="src/css/reset.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="src/css/style.css" type="text/css" media="screen">
-        <link rel="stylesheet" href="src/css/layout.css" type="text/css" media="screen">
-        <script src="src/js/jquery-1.7.1.min.js" type="text/javascript"></script>
-        <script src="src/js/cufon-yui.js" type="text/javascript"></script>
-        <script src="src/js/cufon-replace.js" type="text/javascript"></script>
-        <script src="src/js/Dynalight_400.font.js" type="text/javascript"></script>
-        <script src="src/js/FF-cash.js" type="text/javascript"></script>
-        <script src="src/js/tms-0.3.js" type="text/javascript"></script>
-        <script src="src/js/tms_presets.js" type="text/javascript"></script>
-        <script src="src/js/jquery.easing.1.3.js" type="text/javascript"></script>
-        <script src="src/js/jquery.equalheights.js" type="text/javascript"></script>
-        <!--[if lt IE 9]><script type="text/javascript" src="src/js/html5.js"></script><![endif]-->
+        <?php
+            require("./src/srv/views/header.php");
+        ?>
     </head>
     <body id="page1">
         <!--==============================header=================================-->
         <header>
             <div class="row-top">
                 <div class="main">
+                    <div>
+                        <?php
+                            require("barra-superior-login.php");
+                        ?>
+                    </div>
                     <div class="wrapper">
-                        <h1><a href="index.html">ArmaTuPlato . cl<span></span></a></h1>
+                        <h1><a href="index.php">ArmaTuPlato . cl<span></span></a></h1>
                         <nav>
                             <ul class="menu">
                                 <li><a class="active" href="index.php">Inicio</a></li>
