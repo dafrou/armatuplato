@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-06-2014 a las 20:50:36
--- Versión del servidor: 5.6.12-log
--- Versión de PHP: 5.4.16
+-- Tiempo de generación: 14-06-2014 a las 21:04:40
+-- Versión del servidor: 5.5.24-log
+-- Versión de PHP: 5.4.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `armatuplato`
 --
-CREATE DATABASE IF NOT EXISTS `armatuplato` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `armatuplato`;
 
 -- --------------------------------------------------------
 
@@ -78,7 +76,14 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `correo` varchar(200) NOT NULL,
   `contrasena` varchar(120) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `correo`, `contrasena`) VALUES
+(1, 'christianmezah11@gmail.com', 'a64aa317d35fea20049f11e47be6481e');
 
 --
 -- Restricciones para tablas volcadas
