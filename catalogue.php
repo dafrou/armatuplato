@@ -66,26 +66,6 @@ require('./src/srv/core/start.php');
                         <?php
                         require("./src/srv/views/catalogo.php");
                         ?>
-                        <div>
-                            <div class="p4">
-                                <figure>
-                                    <a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img1.jpg" alt=""></a>
-                                </figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">Pastas</p>
-                                <p class="p2"><strong class="color-2">Precio: "por definir"</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure>
-                                <a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img5.jpg" alt=""></a>
-                            </figure>
-                            <h5>Detalle </h5>
-                            <p class="p1">Postres</p>
-                            <p class="p2"><strong class="color-2">Precio: "por definir"</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
                     </div>
                 </div>
             </div>
