@@ -1,6 +1,6 @@
 <?php
-    session_start();
-    require('./src/srv/core/start.php');
+session_start();
+require('./src/srv/core/start.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
         <title>Arma Tu Plato.cl | Catalogo</title>
         <meta charset="utf-8">
         <?php
-            require("./src/srv/views/header.php");
+        require("./src/srv/views/header.php");
         ?>
         <script type="text/javascript">
             $(document).ready(function() {
@@ -32,7 +32,7 @@
                     <div class="wrapper">
                         <div>
                             <?php
-                                require("./src/srv/views/barra-superior-usuario.php");
+                            require("./src/srv/views/barra-superior-usuario.php");
                             ?>
                         </div>
                         <h1><a href="index.php">ArmaTuPlato . cl<span></span></a></h1>
@@ -63,191 +63,27 @@
                 <div class="container">
                     <h3 class="prev-indent-bot">Catalogue</h3>
                     <div id="slider-2">
+                        <?php
+                        require("./src/srv/views/catalogo.php");
+                        ?>
                         <div>
                             <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img1.jpg" alt=""></a></figure>
+                                <figure>
+                                    <a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
+                                        <img src="images/page3-img1.jpg" alt=""></a>
+                                </figure>
                                 <h5>Detalle</h5>
-                                <p class="p1">
-                                    Pastas
-                                </p>
+                                <p class="p1">Pastas</p>
                                 <p class="p2"><strong class="color-2">Precio: "por definir"</strong></p>
                                 <a class="button-1" href="#">Agregar al carro</a>
                             </div>
-                            <figure><a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img5.jpg" alt=""></a></figure>
+                            <figure>
+                                <a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
+                                    <img src="images/page3-img5.jpg" alt=""></a>
+                            </figure>
                             <h5>Detalle </h5>
-                            <p class="p1">
-                                Postres
-                            </p>
+                            <p class="p1">Postres</p>
                             <p class="p2"><strong class="color-2">Precio: "por definir"</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img3.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img2.jpg" alt=""></a></figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">Detallar</p>
-                                <p class="p2"><strong class="color-2">Precio: $9.50</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img6.jpg" alt=""></a></figure>
-                            <h5>Detalle</h5>
-                            <p class="p1">Detallar</p>
-                            <p class="p2"><strong class="color-2">Precio: $9.50</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img3.jpg" alt=""></a></figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">
-                                    Detallar
-
-                                </p>
-                                <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img7.jpg" alt=""></a></figure>
-                            <h5>Detalle</h5>
-                            <p class="p1">
-                                Detallar<br>
-
-                            </p>
-                            <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img3.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img4.jpg" alt=""></a></figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">Detallar</p>
-                                <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img8.jpg" alt=""></a></figure>
-                            <h5>Detalle</h5>
-                            <p class="p1">Detallar</p>
-                            <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img1.jpg" alt=""></a></figure>
-                                <h5>Detalle </h5>
-                                <p class="p1">
-                                    Detallar
-
-                                </p>
-                                <p class="p2"><strong class="color-2">Precio: $12.95</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img5.jpg" alt=""></a></figure>
-                            <h5>Detalle </h5>
-                            <p class="p1">
-                                Detallar
-                            </p>
-                            <p class="p2"><strong class="color-2">Precio: $12.95</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img3.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img2.jpg" alt=""></a></figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">Detallar</p>
-                                <p class="p2"><strong class="color-2">Precio: $9.50</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img6.jpg" alt=""></a></figure>
-                            <h5>Detalle</h5>
-                            <p class="p1">Detallar</p>
-                            <p class="p2"><strong class="color-2">Precio: $9.50</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img3.jpg" alt=""></a></figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">
-                                    Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi<br>
-                                    enim ad minim.
-                                </p>
-                                <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img7.jpg" alt=""></a></figure>
-                            <h5>Detalle</h5>
-                            <p class="p1">
-                                Euismod tincidunt ut laoreet dolore magna aliquam erat volutpat wisi<br>
-                                enim ad minim.
-                            </p>
-                            <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img3.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img4.jpg" alt=""></a></figure>
-                                <h5>Ut wisi enim ad minim veniam</h5>
-                                <p class="p1">Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img8.jpg" alt=""></a></figure>
-                            <h5>Ut wisi enim ad minim veniam</h5>
-                            <p class="p1">Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                            <p class="p2"><strong class="color-2">Precio: $15.95</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img1.jpg" alt=""></a></figure>
-                                <h5>Nam liber tempor cusoluta </h5>
-                                <p class="p1">
-                                    Nobis eleifend option congue nihil imperdiet doming quod mazim plac<br>
-                                    erat facer possim.
-                                </p>
-                                <p class="p2"><strong class="color-2">Precio: $12.95</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img2.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img5.jpg" alt=""></a></figure>
-                            <h5>Nam liber tempor cusoluta </h5>
-                            <p class="p1">
-                                Nobis eleifend option congue nihil imperdiet doming quod mazim plac<br>
-                                erat facer possim.
-                            </p>
-                            <p class="p2"><strong class="color-2">Precio: $12.95</strong></p>
-                            <a class="button-1" href="#">Agregar al carro</a>
-                        </div>
-                        <div>
-                            <div class="p4">
-                                <figure><a class="lightbox-image" href="images/slider-img3.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                        <img src="images/page3-img2.jpg" alt=""></a></figure>
-                                <h5>Detalle</h5>
-                                <p class="p1">Consectetuer adipiscing elit, Detalle euismod tincidunt ut laoreet dolore magna.</p>
-                                <p class="p2"><strong class="color-2">Precio: $9.50</strong></p>
-                                <a class="button-1" href="#">Agregar al carro</a>
-                            </div>
-                            <figure><a class="lightbox-image" href="images/slider-img1.jpg" data-gal="prettyPhoto[prettyPhoto]">
-                                    <img src="images/page3-img6.jpg" alt=""></a></figure>
-                            <h5>Detalle</h5>
-                            <p class="p1">Consectetuer adipiscing elit, Detalle euismod tincidunt ut laoreet dolore magna.</p>
-                            <p class="p2"><strong class="color-2">Precio: $9.50</strong></p>
                             <a class="button-1" href="#">Agregar al carro</a>
                         </div>
                     </div>
