@@ -16,6 +16,8 @@ require('./src/srv/proceso/login.php');
             <div class="row-top">
                 <div class="main">
                     <div class="wrapper">
+                        <br />
+                        <br />
                         <h1><a href="index.html">ArmaTuPlato . cl<span></span></a></h1>
                         <nav>
                             <ul class="menu">
@@ -59,13 +61,13 @@ require('./src/srv/proceso/login.php');
                                     <input name="email" type="text" />
                                 </label>
                                 <label><span class="text-form">Contraseña</span>
-                                    <input name="pass" type="text" />
+                                    <input name="pass" type="password" />
                                 </label>
                                 <div class="wrapper">
 
                                     <div class="clear"></div>
                                     <div class="buttons">
-                                        <a class="button-2" href="#">Limpiar</a>
+                                        <button class="button-2">Limpiar</button>
                                         <button class="button-2">Iniciar sesión</button>
                                     </div>
                                 </div>

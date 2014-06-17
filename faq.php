@@ -24,7 +24,7 @@
                         <h1><a href="index.php">ArmaTuPlato . cl<span></span></a></h1>
                         <nav>
                             <ul class="menu">
-                                <li><a class="active" href="index.php">Inicio</a></li>
+                                <li><a href="index.php">Inicio</a></li>
                                 <li><a href="menu.php">Precios</a></li>
                                 <li><a href="catalogue.php">Catalogo</a></li>
                                 <li><a href="shipping.php">Costos de Envios</a></li>
