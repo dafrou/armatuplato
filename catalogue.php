@@ -62,7 +62,7 @@ require('./src/srv/core/start.php');
             <div class="main">
                 <div class="container">
                     <h3 class="prev-indent-bot">Catalogue</h3>
-                    <div id="slider-2">
+                    <div>
                         <?php
                         require("./src/srv/views/catalogo.php");
                         ?>
