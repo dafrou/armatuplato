@@ -20,6 +20,48 @@ if (isset($_GET['agregarplato'])) {
                 "activo" => true
             )
         );
+        header('Location: platos.php');
+    } else {
+        header('Location: platos.php');
+    }
+}
+if (isset($_GET['retirarplato'])) {
+    if ((int) $_GET['retirarplato'] !== 0) {
+        $l = count($_SESSION['carro']);
+        for ($x = 0; $x < $l; $x++) {
+            if ((int) $_SESSION['carro'][$x]['plato']['id'] === (int) $_GET['retirarplato'] &&
+                    !$_SESSION['carro'][$x]['plato']['activo']) {
+                unset($_SESSION['carro'][$x]);
+                break;
+            }
+        }
+        $_SESSION['carro'] = array_values($_SESSION['carro']);
+        /* $carro = $_SESSION['carro'];
+          $_SESSION['carro'] = array();
+          foreach ($carro as $plato) {
+          $_SESSION['carro'][] = $plato;
+          } */
+        header('Location: platos.php');
+    } else {
+        header('Location: platos.php');
+    }
+}
+if (isset($_GET['retirar'], $_GET['plato'])) {
+    if ((int) $_GET['retirar'] !== 0 && (int) $_GET['plato'] !== 0) {
+        $l = count($_SESSION['carro']);
+        for ($x = 0; $x < $l; $x ++) {
+            if ((int) $_SESSION['carro'][$x]['plato']['id'] === (int) $_GET['plato']) {
+                $ll = count($_SESSION['carro'][$x]['plato']['productos']);
+                for ($y = 0; $y < $ll; $y++) {
+                    if ((int) $_SESSION['carro'][$x]['plato']['productos'][$y]['id'] === (int) $_GET['retirar']) {
+                        unset($_SESSION['carro'][$x]['plato']['productos'][$y]);
+                        break;
+                    }
+                }
+                $_SESSION['carro'][$x]['plato']['productos'] = array_values($_SESSION['carro'][$x]['plato']['productos']);
+            }
+        }
+        header('Location: platos.php');
     } else {
         header('Location: platos.php');
     }
@@ -77,13 +119,13 @@ if (isset($_GET['agregarplato'])) {
                         $total = 0;
                         ?>
                         <ul class="ul">
-                            <li>Plato <strong><?= $plato['plato']['nombre'] ?></strong> <?= ($plato['plato']['activo'] ? '(Activo)' : '') ?></li>
+                            <li>Plato <strong><?= $plato['plato']['nombre'] ?></strong> <?= ($plato['plato']['activo'] ? '(Activo)' : "<a href='?retirarplato={$plato['plato']['id']}'>Retirar Plato</a>") ?></li>
                             <ul class="ul">
                                 <?php
                                 foreach ($plato['plato']['productos'] as $producto) {
                                     $total += (int) $producto['precio'];
                                     ?>
-                                    <li><?= $producto['nombre'] ?> ($<?= $producto['precio'] ?>) <a href="?retirar=<?= $producto['id'] ?>">Retirar</a></li>
+                                    <li><?= $producto['nombre'] ?> ($<?= $producto['precio'] ?>) <a href="?retirar=<?= $producto['id'] ?>&plato=<?= $plato['plato']['id'] ?>">Retirar</a></li>
                                     <?php
                                 }
                                 ?>
