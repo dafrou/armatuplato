@@ -1,6 +1,18 @@
 <?php
 session_start();
 require('./src/srv/core/start.php');
+if (isset($_GET['id'])) {
+    $errores = array();
+    if ((int) $_GET['id'] !== 0) {
+        if ((int) $q->one("SELECT COUNT(*) FROM producto WHERE id = {$_GET['id']};") === 1) {
+            $errores[] = "No se ha encontrado el producto solicitado.";
+        } else {
+            $_SESSION['carro']['plato-activo'][] = $q->row("SELECT * FROM producto WHERE id {$_GET['id']};");
+        }
+    } else {
+        header('Location: catalogue.php');
+    }
+}
 ?>
 <!DOCTYPE html>
 <html>
