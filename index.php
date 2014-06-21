@@ -45,7 +45,7 @@
                                 <ul class="items">
                                     <li> <img src="src/images/slider-img1.jpg" alt="" /> </li>
                                     <li> <img src="src/images/slider-img2.jpg" alt="" /> </li>
-                                    <li> <img src="src/images/slider-img3.jpg" alt="" /> </li>
+                                    <li> <img src="src/images/slider-img0.jpg" alt="" /> </li>
                                 </ul>
                             </div>
                         </div>
