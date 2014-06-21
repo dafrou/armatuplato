@@ -1,12 +1,30 @@
 <?php
 require ('./src/srv/core/start.php');
+$mensaje = null;
+if (isset($_POST['mail'], $_POST['pass'])) {
+    $errores = array();
+    if (!$valida->validarMail($_POST['mail'])) {
+        $errores[] = "Correo incorrecto";
+    } else {
+        $mail = strtolower(trim($_POST['mail']));
+        if ((int) $q->one("SELECT COUNT(*) FROM usuario WHERE correo = '$mail';") === 1) {
+            $errores[] = "Ya existe un usuario con este correo.";
+        } else {
+            $pass = strtolower(trim($_POST['pass']));
+            if ($q->q("INSERT INTO usuario (correo, contrasena) VALUES ('$mail', MD5('$pass'))")) {
+                $mensaje = "Usuario ingresado correctamente, puede iniciar sesión <a class='login.php'>aquí</a>";
+            } else {
+                $errores[] = 'Error inesperado, vuelva a intentar de nuevo más tarde.';
+            }
+        }
+    }
+}
 ?>
 <html>
     <head>
         <meta charset="utf-8">
         <?php
-            require("./src/srv/views/header.php");
-            
+        require("./src/srv/views/header.php");
         ?>
     </head>
     <body id="page7">
@@ -47,7 +65,13 @@ require ('./src/srv/core/start.php');
                     </article>
                     <article class="col-2">
                         <h3 class="p1">Registrate</h3>
-                        
+                        <?php
+                        if ($mensaje === null) {
+                            require("./src/srv/views/mostrar-errores.php");
+                        } else {
+                            echo $mensaje;
+                        }
+                        ?>
                         <form id="contact-form" action="" method="post">
                             <fieldset>
                                 <label><span class="text-form">Mail:</span>
