@@ -43,9 +43,9 @@
                         <div class="slider-wrapper">
                             <div class="slider">
                                 <ul class="items">
-                                    <li> <img src="images/slider-img1.jpg" alt="" /> </li>
-                                    <li> <img src="images/slider-img2.jpg" alt="" /> </li>
-                                    <li> <img src="images/slider-img3.jpg" alt="" /> </li>
+                                    <li> <img src="src/images/slider-img1.jpg" alt="" /> </li>
+                                    <li> <img src="src/images/slider-img2.jpg" alt="" /> </li>
+                                    <li> <img src="src/images/slider-img3.jpg" alt="" /> </li>
                                 </ul>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
 
                                 </ul>
                             </div>
-                            <a class="button-1" href="faq.html">Detalle de Servicios</a> </div>
+                            <a class="button-1" href="faq.php">Detalle de Servicios</a> </div>
                     </article>
                     <article class="column-2">
                         <div class="maxheight indent-bot">
@@ -82,7 +82,7 @@
                             <h6 class="p2">ArmaTuPlato.Cl se destaca por poseer una variada gama de productos, ofrecemos todo tipo de carnes, acompañamientos y postres. Entregados en forma oportuna y segun preferencias del cliente.</h6>
                             <p class="p2"></p>
                         </div>
-                        <a class="button-2" href="catalogue.html">Detalle de Productos</a> </article>
+                        <a class="button-2" href="catalogue.php">Detalle de Productos</a> </article>
                 </div>
             </div>
         </section>
