@@ -2,15 +2,24 @@
 session_start();
 require('./src/srv/core/start.php');
 if (isset($_GET['id'])) {
-    $errores = array();
-    if ((int) $_GET['id'] !== 0) {
-        if ((int) $q->one("SELECT COUNT(*) FROM producto WHERE id = {$_GET['id']};") === 1) {
-            $errores[] = "No se ha encontrado el producto solicitado.";
+    if (isset($_SESSION['user'])) {
+        $errores = array();
+        if ((int) $_GET['id'] !== 0) {
+            if ((int) $q->one("SELECT COUNT(*) FROM producto WHERE id = {$_GET['id']};") !== 1) {
+                $errores[] = "No se ha encontrado el producto solicitado.";
+            } else {
+                $l = count($_SESSION['carro']);
+                for ($x = 0; $x < $l; $x++) {
+                    if ($_SESSION['carro'][$x]['plato']['activo']) {
+                        $_SESSION['carro'][$x]['plato']['productos'][] = $q->row("SELECT * FROM producto WHERE id = {$_GET['id']};");
+                    }
+                }
+            }
         } else {
-            $_SESSION['carro']['plato-activo'][] = $q->row("SELECT * FROM producto WHERE id {$_GET['id']};");
+            header('Location: catalogue.php');
         }
     } else {
-        header('Location: catalogue.php');
+        header('Location: login.php');
     }
 }
 ?>

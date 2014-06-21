@@ -19,8 +19,16 @@ if (isset($_POST['email'], $_POST['pass'])) {
             session_destroy();
         } else {
             $_SESSION['user'] = $user;
-            $_SESSION['carro'] = array("plato-activo" => array());
-            $_SESSION['carro'] = array("plato" => array());
+            $_SESSION['carro'] = array(
+                array(
+                    "plato" => array(
+                        "id" => 1,
+                        "nombre" => "plato uno",
+                        "productos" => array(),
+                        "activo" => true
+                    )
+                )
+            );
             //$_SESSION['carro']["plato"][]= $producto 
             header("Location: index.php");
         }

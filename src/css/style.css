@@ -6,6 +6,21 @@ ul.catalogo li {
 ul.catalogo li img {
     width: 150px;
 }
+ul.ul li {
+    list-style: initial;
+    font-size: 14px;
+}
+ul.ul {
+    margin-left: 15px;
+}
+h1.h1 {
+    display: block;
+    font-size: 30px;
+    float: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
 
 /* Getting the new tags to behave */
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
