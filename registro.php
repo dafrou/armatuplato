@@ -12,7 +12,7 @@ if (isset($_POST['mail'], $_POST['pass'])) {
         } else {
             $pass = strtolower(trim($_POST['pass']));
             if ($q->q("INSERT INTO usuario (correo, contrasena) VALUES ('$mail', MD5('$pass'))")) {
-                $mensaje = "Usuario ingresado correctamente, puede iniciar sesión <a class='login.php'>aquí</a>";
+                $mensaje = "Usuario ingresado correctamente, puede iniciar sesión <a href='login.php'>aquí</a>";
             } else {
                 $errores[] = 'Error inesperado, vuelva a intentar de nuevo más tarde.';
             }
