@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4
+-- version 3.5.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-06-2014 a las 21:37:37
--- Versión del servidor: 5.6.12-log
--- Versión de PHP: 5.4.16
+-- Tiempo de generación: 24-06-2014 a las 20:04:15
+-- Versión del servidor: 5.5.24-log
+-- Versión de PHP: 5.4.3
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `armatuplato`
 --
-CREATE DATABASE IF NOT EXISTS `armatuplato` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `armatuplato`;
 
 -- --------------------------------------------------------
 
@@ -45,40 +43,29 @@ CREATE TABLE IF NOT EXISTS `compra` (
 
 CREATE TABLE IF NOT EXISTS `producto` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` int(11) NOT NULL,
+  `nombre` varchar(45) NOT NULL,
   `precio` int(11) NOT NULL,
   `habilitado` tinyint(1) NOT NULL,
   `foto` varchar(250) DEFAULT NULL,
   `descripcion` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `producto`
 --
 
 INSERT INTO `producto` (`id`, `nombre`, `precio`, `habilitado`, `foto`, `descripcion`) VALUES
-(1, 0, 2366, 1, 'page2-img1', NULL),
-(2, 0, 3044, 1, 'page2-img2', NULL),
-(3, 0, 2886, 1, 'page2-img3', NULL),
-(4, 0, 3629, 1, 'page2-img4', NULL),
-(5, 0, 3139, 1, 'page2-img5', NULL),
-(6, 0, 2063, 1, 'page2-img6', NULL),
-(7, 0, 4787, 1, 'page2-img7', NULL),
-(8, 0, 651, 1, 'page2-img8', NULL),
-(9, 0, 1747, 1, 'page2-img9', NULL),
-(10, 0, 885, 1, 'page2-img10', NULL),
-(11, 0, 1310, 1, 'page3-img1', NULL),
-(12, 0, 4363, 1, 'page3-img2', NULL),
-(13, 0, 1285, 1, 'page3-img3', NULL),
-(14, 0, 1326, 1, 'page3-img4', NULL),
-(15, 0, 2080, 1, 'page3-img5', NULL),
-(16, 0, 1926, 1, 'page3-img6', NULL),
-(17, 0, 2856, 1, 'page3-img7', NULL),
-(18, 0, 4559, 1, 'page3-img8', NULL),
-(19, 0, 4408, 1, 'slider-img1', NULL),
-(20, 0, 2869, 1, 'slider-img2', NULL),
-(21, 0, 1415, 1, 'slider-img3', NULL);
+(1, 'Arroz primavera', 500, 1, 'page2-img1.jpg', '500 gramos '),
+(2, 'Coctel de frutas', 750, 1, 'page2-img2.jpg', 'Variadas frutas de la temporada'),
+(3, 'Escalopa', 1200, 1, 'page2-img3.jpg', 'Pescado, res o pollo'),
+(4, 'Ensalada mixta', 600, 1, 'page2-img4.jpg', 'Variadas ensaladas de la temporada'),
+(5, 'Espagueti ', 550, 1, 'page2-img5.jpg', 'Salsa alfredo'),
+(6, 'Pollo', 1000, 1, 'page2-img6.jpg', 'Asado, al juego, cocido'),
+(7, 'Pescado salteado', 1600, 1, 'page2-img7.jpg', 'Salmon, Reyneta'),
+(8, 'Consome', 550, 1, 'page2-img8.jpg', 'Esparrago, pollo, choclo'),
+(9, 'Cazuela', 1747, 1, 'page2-img9.jpg', 'Vacuno o ave'),
+(10, 'Carne de res', 1100, 1, 'page2-img10.jpg', 'Asada');
 
 -- --------------------------------------------------------
 
@@ -105,14 +92,19 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   `correo` varchar(200) NOT NULL,
   `contrasena` varchar(120) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`id`, `correo`, `contrasena`) VALUES
-(1, 'christianmezah11@gmail.com', 'a64aa317d35fea20049f11e47be6481e');
+(1, 'christianmezah11@gmail.com', 'a64aa317d35fea20049f11e47be6481e'),
+(6, 'cmeza@eurocorp.cl', 'e10adc3949ba59abbe56e057f20f883e'),
+(7, 'kdmxs6@gmail.com', 'afd36207986443eb9a7ffe648fa8b4ac'),
+(8, 'dafrou@hotmail.com', 'd2d138388d045729faeaf53c55e0f3cd'),
+(9, 'lakastora@gmail.com', 'db67ece2c1ffddf9f2ac146265b30db5'),
+(10, 'rcofre@eurocorp.cl', 'e10adc3949ba59abbe56e057f20f883e');
 
 --
 -- Restricciones para tablas volcadas
