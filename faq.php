@@ -49,9 +49,12 @@
                 <div class="container">
                     <h3>Preguntas Frecuentes</h3>
                     <ul class="list-1">
-                        <li> <a href="#"><strong>Medios de Pago</strong></a> <span>Explicacion </span> </li>
+                        <li> <a href="#"><strong>Medios de Pago</strong></a> <span>Pago en efectivo: al recibir su pedido usted cancela segun el valor del o los platos creados, el pago se realizara directamente con nuestro repartidor o en nuestro local segun corresponda, los conceptos de propina quedan sujetos a su criterio.<br><br>
+                                                                                   Red compra: al recibir su pedido usted cancela segun el valor del o los platos creados, el pago se realizara directamente con nuestro repartidor o en nuestro local segun corresponda, los conceptos de propina quedan sujetos a su criterio. Ademas se les recuerda que el ingreso de clave de transaccion es de exclusiva digitacion del cliente.<br><br>
+                                                                                   Pago con cargo a tarjeta de credito: al recibir su pedido usted cancela segun el valor del o los platos creados, el pago se realizara directamente con nuestro repartidor o en nuestro local según corresponda, los conceptos de propina quedan sujetos a su criterio. Ademas se les recuerda que el ingreso de clave de transaccion es de exclusiva digitacion del cliente.<br><br>
+                                                                                   PayPal: al momento de realizar el pedido en nuestro carrito de compras, usted podra cancelar su pedido a traves de paypal, previo a esto usted debera ser un usuario registrado en nuestro sitio para registrarse en nuestro sitio <a href="registro.php">presione aqui</a>.</span> </li>
                         <li> <a href="#"><strong>Costos de envio</strong></a> <span>Explicacion</span> </li>
-                        <li> <a href="#"><strong>Como armo mi plato</strong></a> <span>Explicacion.</span> </li>
+                        <li> <a href="#"><strong>Como armo mi plato</strong></a> <span>La primera instancia es registrarse en nuestro sitio, una vez registrado podras agregar productos a tu carro de compras, en nuestro carro de compras siempre habra un plato activo en el cual podras agregar tus productos según tus preferencias. Nuestro carro ofrece la posibilidad de crear varios platos a la vez y ser cargados al usuario que se registro</span> </li>
                         <li> <a href="#"><strong>Cual es el radio de entrega</strong></a> <span>Explicacion</span> </li>
                         <li> <a href="#"><strong>Horarios de atencion</strong></a> <span>Explicacion </span> </li>
                     </ul>

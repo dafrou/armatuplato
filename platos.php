@@ -138,7 +138,8 @@ if (isset($_GET['retirar'], $_GET['plato'])) {
                     ?>
                     <a href="?agregarplato=1">Agregar Nuevo Plato</a>
                     <br/>
-                    <h1 class="h1">Total del pedido: <strong>$<?= $totalPlatos; ?></strong></h1>
+                    <br/>
+                    <h1 class="h1">Total del pedido: <strong>$<?= $totalPlatos; ?></strong></h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button-2" type="button" onclick="location.href='venta.php' ">Confirmar pedido</button>              
                 </div>
             </div>
         </section>
