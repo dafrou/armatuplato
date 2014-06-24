@@ -53,12 +53,13 @@
                             <div class="p2">
                                 <h3 class="p1">Referencias de precios</h3>
                                 <dl class="list-2">
-                                    <dt><em>Orden</em><span>Precio</span></dt>
-                                    <dd><em>1 plato</em><span>$ 2.500</span></dd>
-                                    <dd><em>2 platos</em><span>$ 5.000</span></dd>
-                                    <dd><em>3 platos</em><span>$ 7.000</span></dd>
-                                    <dd><em>4 platos</em><span>$ 9.500</span></dd>
-                                    <dd><em>5 platos</em><span>$ 11.000</span></dd>
+                                    <dt><em>Orden</em><span>Recargo</span></dt>
+                                    <dd><em>1 plato</em><span>$ 700</span></dd>
+                                    <dd><em>2 platos</em><span>$ 600</span></dd>
+                                    <dd><em>3 platos</em><span>$ 500</span></dd>
+                                    <dd><em>4 platos</em><span>$ 400</span></dd>
+                                    <dd><em>5 platos</em><span>$ 300</span></dd>
+                                    <dd><em>6 platos</em><span>Gratis</span></dd>
 
                                 </dl>
                             </div>
