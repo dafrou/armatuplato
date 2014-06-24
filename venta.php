@@ -1,14 +1,26 @@
-
-
 <?php
-    session_start();
-    require('./src/srv/core/start.php');
+session_start();
+require('./src/srv/core/start.php');
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php');
+}
+//obtener el total del carro
+foreach ($_SESSION['carro'] as $plato) {
+    $total = 0;
+    foreach ($plato['plato']['productos'] as $producto) {
+        $total += (int) $producto['precio'];
+    }
+}
+//si el total del plato es cero, no tiene productos, que vaya a buscar
+if ($total === 0) {
+    header('Location: catalogue.php');
+}
 ?>
 <html>
     <head>
         <meta charset="utf-8">
         <?php
-            require("./src/srv/views/header.php");
+        require("./src/srv/views/header.php");
         ?>
     </head>
     <body id="page7">
@@ -56,13 +68,13 @@
                             }
                         }
                         ?>
+                        <h4>Total del pedido $<strong><?= $total ?></strong></h4>
                         <form id="contact-form" action="" method="post">
                             <fieldset>
                                 <label><span >Venta realizada con exito</span></label><br>
                                 <div class="wrapper">
-                                    <br>                             
-                                       <label><span>Nuestros tiempos de envio son de 1 hora aproximadamente</span></label>  
-                                    </div>
+                                    <br/>                             
+                                    <label><span>Nuestros tiempos de envio son de 1 hora aproximadamente</span></label>  
                                 </div>
                             </fieldset>
                         </form>
