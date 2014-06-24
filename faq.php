@@ -56,7 +56,7 @@
                         <li> <a href="#"><strong>Costos de envio</strong></a> <span>Los costos de envio estan asociados y explicados en nuestro mismo sitio web, podras encontrar un detalle <a href="shipping.php"> Aqui</a></span> </li>
                         <li> <a href="#"><strong>Como armo mi plato</strong></a> <span>La primera instancia es registrarse en nuestro sitio, una vez registrado podras agregar productos a tu carro de compras, en nuestro carro de compras siempre habra un plato activo en el cual podras agregar tus productos según tus preferencias. Nuestro carro ofrece la posibilidad de crear varios platos a la vez y ser cargados al usuario que se registro</span> </li>
                         <li> <a href="#"><strong>Cual es el radio de entrega</strong></a> <span>Nuestro radio de entrega comprende las siguientes comunas <br> Las condes <br> Providencia </span> </li>
-                        <li> <a href="#"><strong>Horarios de atencion</strong></a> <span>De lunes a Jueves de 10:30 horas hasta las 22:30 horas <br> De viernes a Sabado de 11:00 horas hasta las 23:30 horas<br>Domingos y festivos de 11:00 horas a 21:00 horas </span> </li>
+                        <li> <a href="#"><strong>Horarios de atencion</strong></a> <h6 class="p2">De lunes a Jueves de 10:30 horas hasta las 22:30 horas <br> De viernes a Sabado de 11:00 horas hasta las 23:30 horas<br>Domingos y festivos de 11:00 horas a 21:00 horas </h6> </li>
                     </ul>
                 </div>
             </div>

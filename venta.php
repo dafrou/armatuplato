@@ -71,10 +71,12 @@ if ($total === 0) {
                         <h4>Total del pedido $<strong><?= $total ?></strong></h4>
                         <form id="contact-form" action="" method="post">
                             <fieldset>
-                                <label><span >Venta realizada con exito</span></label><br>
+                                <h4>Venta realizada con exito</h4>
                                 <div class="wrapper">
                                     <br/>                             
-                                    <label><span>Nuestros tiempos de envio son de 1 hora aproximadamente</span></label>  
+                                    <h6 class="p2">Nuestros tiempos de envio son de 1 hora aproximadamente</h6> 
+                                    <br>                            
+                                    <a href="logout.php">Cerrar Sesión</a>
                                 </div>
                             </fieldset>
                         </form>
